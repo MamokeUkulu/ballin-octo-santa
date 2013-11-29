@@ -1,0 +1,6 @@
+(setq theBoard (initializeBoard))
+(setq movelist ())
+(setq movelist (append movelist (list '(5 0))))
+(setq movelist (append movelist (list '(4 1))))
+(updateBoard (nth 0 (nth 5 theBoard)) theBoard movelist)
+(displayBoard theBoard)
